@@ -41,4 +41,6 @@ public abstract class Vehiculo {
 	public String toString() {
 		return "Vehiculo [placa=" + placa + ", propietario=" + propietario + ", horaIngreso=" + horaIngreso + "]";
 	}
+	
+	public abstract double calcularTarifa(int horasPermanencia);
 }

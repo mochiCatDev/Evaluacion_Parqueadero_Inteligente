@@ -1,6 +1,6 @@
 package com.krakedev.parqueadero.modelo;
 
-public class Motocicleta extends Vehiculo{
+public class Motocicleta extends Vehiculo {
 	private int cilindraje;
 
 	public Motocicleta(String placa, String propietario) {
@@ -18,14 +18,13 @@ public class Motocicleta extends Vehiculo{
 	@Override
 	public double calcularTarifa(int horasPermanencia) {
 		double tarifaBase = 0.75;
-		
+
 		if (cilindraje > 250) {
 			tarifaBase = 1;
 		}
-		
+
 		double total = horasPermanencia * tarifaBase;
 		return total;
 	}
-	
-	
+
 }
